@@ -9,6 +9,7 @@ import (
 	"strings"
 )
 
+// The values are just stuck together and processed same as 6.1
 func Main2() {
 	file, err := os.Open("day6/input.txt")
 	if err != nil {

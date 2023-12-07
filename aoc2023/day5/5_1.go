@@ -1,3 +1,5 @@
+// DONE
+
 package day5
 
 import (

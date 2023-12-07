@@ -1,3 +1,5 @@
+// DONE
+
 package day2
 
 import (
@@ -10,6 +12,7 @@ import (
 	s "strings"
 )
 
+// Lines are split same as in 2.1, but the map now stores max found count, which corresponds to minimum possible count
 func Main2() {
 	real_count := map[string]int{
 		"red":   0,

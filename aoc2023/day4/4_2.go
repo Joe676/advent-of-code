@@ -1,3 +1,5 @@
+// DONE
+
 package day4
 
 import (
@@ -10,6 +12,7 @@ import (
 	"strings"
 )
 
+// A list of multipliers is stored to remember how many of each scratchcards we have. These are applied to appropriate winnings.
 func Main2() {
 	file, err := os.Open("day4/input.txt")
 	if err != nil {

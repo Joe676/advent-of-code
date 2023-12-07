@@ -1,3 +1,5 @@
+// DONE
+
 package day1
 
 import (
@@ -7,6 +9,7 @@ import (
 	"os"
 )
 
+// Each line is scanned from left and from right to find first & last rune representing a number 0<=l<=9
 func Main1() {
 	file, err := os.Open("day1/input.txt")
 	if err != nil {

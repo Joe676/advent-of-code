@@ -80,6 +80,7 @@ func setBestHandKind(h *hand) {
 	h.hand_kind = best_kind
 }
 
+// To determine hand's kind, Js are swapped into each card face. The best kind of these changes are then used.
 func Main2() {
 	file, err := os.Open("day7/input.txt")
 	util.Check(err)
@@ -102,7 +103,6 @@ func Main2() {
 
 	for i := 0; i < len(hands); i++ {
 		setBestHandKind(&hands[i])
-		// fmt.Println(hands[i])
 	}
 
 	handsCmp := func(a, b hand) int {
@@ -114,7 +114,6 @@ func Main2() {
 					return card_cmp
 				}
 			}
-			// return cmp.Compare(a.cards, b.cards)
 		}
 		return kind_cmp
 	}

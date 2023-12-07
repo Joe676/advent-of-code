@@ -86,6 +86,7 @@ func setHandKind(h *hand) {
 	h.hand_kind = high_card
 }
 
+// hands' kinds are determined. Then hands are sorted, first by kind, then by card values.
 func Main1() {
 	file, err := os.Open("day7/input.txt")
 	util.Check(err)

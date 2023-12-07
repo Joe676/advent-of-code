@@ -1,3 +1,5 @@
+// DONE
+
 package day1
 
 import (
@@ -8,6 +10,7 @@ import (
 	s "strings"
 )
 
+// Each line is scanned from left and right in search of one of keys, that are then mapped to values
 func Main2() {
 	code := map[string]int{
 		"1":     1,

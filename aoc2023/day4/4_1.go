@@ -1,3 +1,5 @@
+// DONE
+
 package day4
 
 import (
@@ -10,6 +12,7 @@ import (
 	"strings"
 )
 
+// The winning numbers and guesses are taken from the input and each number in guesses is checked for being contained in the winnings
 func Main1() {
 	file, err := os.Open("day4/input.txt")
 	if err != nil {

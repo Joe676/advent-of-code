@@ -1,3 +1,5 @@
+// DONE
+
 package day2
 
 import (
@@ -10,6 +12,9 @@ import (
 	s "strings"
 )
 
+// Lines are split into number and list of draws with a regex. 
+// Draws are split by ";" and then colors and their counts are found using yet another regex
+// These are compared to expected ones stored in a map (acting as a LUT)
 func Main1() {
 	real_count := map[string]int{
 		"red":   12,

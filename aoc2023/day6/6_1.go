@@ -13,6 +13,8 @@ func s(v int, t int) int {
 	return v * t
 }
 
+// For each race a minimum throttle time and maximum throttle time are found (looking from top and from bottom of the range)
+// These are just subtracted from each other.  
 func Main1() {
 	file, err := os.Open("day6/input.txt")
 	if err != nil {
