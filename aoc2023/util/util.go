@@ -1,6 +1,9 @@
 package util
 
-import "strconv"
+import (
+	"log"
+	"strconv"
+)
 
 func CastAll(in []string) []int {
 	var out []int = make([]int, 0)
@@ -9,4 +12,11 @@ func CastAll(in []string) []int {
 		out = append(out, cast)
 	}
 	return out
+}
+
+func Check(err error) {
+	if err != nil {
+		log.Fatal(err)
+		panic(err)
+	}
 }
